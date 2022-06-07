@@ -10,6 +10,7 @@ public class TestBinCopy {
 
         FileInputStream in = null;
         FileOutputStream out = null;
+        long startTime = System.nanoTime();
 
         try{
 //            in = new FileInputStream("pl/lublin/wsei/java/cwiczenia/console/sample_1920×1280.tiff");
@@ -32,6 +33,12 @@ public class TestBinCopy {
             if (out !=null){
                 out.close();
             }
+
+            long endTime = System.nanoTime();
+            long timeElapsed = endTime - startTime;
+
+            System.out.println("Czas wykonania w nanosekundach :"+timeElapsed);
+            System.out.println("Czas wykoanania w milisekundach" +timeElapsed/1000000);
         }
     }
 }
