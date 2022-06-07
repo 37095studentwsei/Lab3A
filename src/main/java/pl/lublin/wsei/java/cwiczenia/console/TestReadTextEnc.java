@@ -16,7 +16,7 @@ public class TestReadTextEnc {
 
             in = new BufferedReader(new FileReader("src/main/java/pl/lublin/wsei/java/cwiczenia/console/dzieweczki.txt", Charset.forName("windows-1250")));
            // out = new BufferedWriter(new FileWriter("dzieweczki_java.txt"));
-            PrintStream out2 = new PrintStream(new FileOutputStream("dzieweczki_java.txt"));
+            PrintStream out2 = new PrintStream(new FileOutputStream("dzieweczki1_java.txt"));
 
             String line;
             while ((line = in.readLine()) !=null){
